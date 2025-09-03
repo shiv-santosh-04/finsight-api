@@ -1,0 +1,31 @@
+---
+
+## 📁 2. .gitignore File (Copy This)
+
+Save this as .gitignore in your project root:
+
+```gitignore
+# Byte-compiled / optimized / DLL files
+_pycache_/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+
+# Flask specific
+instance/
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
