@@ -1,3 +1,11 @@
-build:
-  environment:
-    pythonVersion: "3.10.13"
+services:
+  - type: web
+    name: finsight-api
+    env: python
+    build:
+      environment:
+        pythonVersion: "3.10.13"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    autoDeploy: true
+    plan: free
