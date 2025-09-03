@@ -35,38 +35,45 @@ It is built to serve as the backend for the Finsight app — a smart AI-powered 
 {
   "prediction": "financial"
 }
-GET /
-Returns a simple status message to confirm the API is running.
-"ML Model API is running!"
 ## 🧪 How to Run Locally
-Clone the repo:
-git clone [https://github.com/shiv-santosh-04/finsight-api.git](https://github.com/shiv-santosh-04/finsight-api.git)
-cd finsight-api
 
-Install dependencies:
-pip install -r requirements.txt
+1.  **Clone the repo:**
+    ```bash
+    git clone [https://github.com/shiv-santosh-04/finsight-api.git](https://github.com/shiv-santosh-04/finsight-api.git)
+    cd finsight-api
+    ```
 
-Run the API:
-python app.py
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-The API will run locally at: http://127.0.0.1:5000/
+3.  **Run the API:**
+    ```bash
+    python app.py
+    ```
+    The API will run locally at: `http://127.0.0.1:5000/`
 
-🐍 Requirements
-Make sure you have Python installed.
+---
 
-Dependencies are listed in requirements.txt:
+## 🐍 Requirements
 
-Flask
+- Make sure you have Python installed.
+- Dependencies are listed in `requirements.txt`:
+  - Flask
+  - joblib
+  - scikit-learn
+  - pandas
 
-joblib
+---
 
-scikit-learn
+## 🌐 Deployment
 
-pandas
-
-🌐 Deployment
 This API can be hosted on platforms like Render or Railway. Make sure to point your frontend (e.g., Flutter or a Web app) to the correct hosted URL.
 
-👤 Author
- Shiv Santosh
- GitHub
+---
+
+## 👤 Author
+
+  Shiv Santosh
+- [GitHub](https://github.com/shiv-santosh-04)
