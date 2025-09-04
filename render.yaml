@@ -2,10 +2,8 @@ services:
   - type: web
     name: finsight-api
     env: python
-    build:
-      environment:
-        pythonVersion: "3.10.13"
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
-    autoDeploy: true
-    plan: free
+    startCommand: "gunicorn --workers 4 --bind 0.0.0.0:$PORT app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.9
