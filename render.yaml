@@ -4,6 +4,6 @@ services:
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn --workers 4 --bind 0.0.0.0:$PORT app:app"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.9.9
+    build:
+      environment:
+        pythonVersion: "3.10.13"
